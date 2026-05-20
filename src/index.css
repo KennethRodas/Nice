@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sour+Gummy:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-blue-main: #253884;
+  --color-black-main: #191308;
+  --color-blue-light: #e6eaf8;
+  --font-sans: 'Roboto', Helvetica, Arial, sans-serif;
+  --font-sour: 'Sour Gummy', sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+.font-heading {
+  font-family: var(--font-sour);
+  font-weight: 800;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.subtle-shadow {
+  box-shadow: 0 4px 6px -1px rgba(25, 19, 8, 0.1), 0 2px 4px -1px rgba(25, 19, 8, 0.06);
+  transition: all 0.2s ease;
+}
+
+.subtle-shadow:hover {
+  box-shadow: 0 8px 15px -3px rgba(25, 19, 8, 0.15), 0 4px 6px -2px rgba(25, 19, 8, 0.05);
+}
+
+.card-shadow {
+  box-shadow: 0 8px 30px rgba(37, 56, 132, 0.08); border: 2px solid #e6eaf8;
+}
+
+.halftone-bg-light {
+  background-image: radial-gradient(rgba(37, 56, 132, 0.04) 20%, transparent 20%);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
